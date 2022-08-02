@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TurnShop Corp.</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="slideShow.css" />
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="ResponsiveSlides/responsiveslides.min.js"></script>
+    <script>
+      $(function () {
+        $("#slider4").responsiveSlides({
+          auto: false,
+          pager: false,
+          nav: true,
+          speed: 500,
+          namespace: "slider-callback",
+          // maxwidth: "550px",
+        });
+      });
+
+      $(function () {
+        $(".show-modal").click(function () {
+          $("#menu-list").fadeIn();
+        });
+
+        $(".menu-list-exit").click(function () {
+          $("#menu-list").fadeOut();
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <header id="Top">
+      <div id="logo-side"><a href="Index.html">📘TurnShopCorp.</a></div>
+      <div id="menu-bar">
+        <p class="menu-item"><a href="Index.html">Home</a></p>
+        <p class="menu-item"><a href="AboutUs.html">About Us</a></p>
+        <p class="menu-item">
+          <a href="OurRetailOutlets.html">Our Retail Outlets</a>
+        </p>
+        <p class="menu-item"><a href="Books.html">Books</a></p>
+        <p class="menu-item">
+          <a href="connectwithUs.html">Create An Account</a>
+        </p>
+      </div>
+      <div id="js-nav-bar">
+        <img class="show-modal" src="images/menu-outline.svg" alt="menu" />
+      </div>
+    </header>
+
+    <div id="menu-list">
+      <p class="menu-items"><a href="Index.html">Home</a></p>
+      <p class="menu-items"><a href="AboutUs.html">About Us</a></p>
+      <p class="menu-items">
+        <a href="OurRetailOutlets.html">Our Retail Outlets</a>
+      </p>
+      <p class="menu-items"><a href="Books.html">Books</a></p>
+      <p class="menu-items">
+        <a href="connectwithUs.html">Create An Account</a>
+      </p>
+      <br /><br /><br /><br />
+      <button class="menu-list-exit">Exit</button>
+    </div>
+
+    <div class="responsive-slider">
+      <ul class="rslides" id="slider4">
+        <li>
+          <img
+            src="images/White Gray Monochrome Business Company Blog Banner.png"
+            alt=""
+          />
+          <!-- <p class="caption">Sweets and Cherries</p> -->
+        </li>
+        <li>
+          <img src="images/VaultsOfSecretsBanner.PNG" alt="" />
+          <!-- <p class="caption">Chocolate Milkshake with Ice Cream</p> -->
+        </li>
+
+        <li>
+          <img src="images/3.png" alt="" />
+          <!-- <p class="caption">Fruity Orange Ice Cream</p> -->
+        </li>
+        <li>
+          <img src="images/2.png" alt="" />
+          <!-- <p class="caption">Ice Cream with Fruit Salad</p> -->
+        </li>
+        <!--
+        <li>
+          <img src="images/VaultsOfSecretsBanner.PNG" alt="" />
+          <p class="caption">Arabian Sweets and Desserts</p>
+        </li>  -->
+      </ul>
+    </div>
+
+    <h2 class="head-tag">Our Authors</h2>
+
+    <div id="our-authors">
+      <div class="each-author">
+        <div>
+          <img src="Images/BenCarsonImage.jpg" alt="A picture of Ben" />
+        </div>
+        <p class="author-name">Ben Carson</p>
+      </div>
+      <div class="each-author">
+        <div>
+          <img src="Images/chinuaAchebeImage.jpg" alt="A picture of dave" />
+        </div>
+        <p class="author-name">Chinua Achebe</p>
+      </div>
+      <div class="each-author">
+        <div>
+          <a href="jkRowling.html"
+            ><img
+              src="Images/J.K-Rowling-Bio-Image.jpg"
+              alt="A picture of J.K Rowling"
+          /></a>
+        </div>
+        <a href="jkRowling.html"> <p class="author-name">J.K Rowling</p></a>
+      </div>
+      <div class="each-author">
+        <div>
+          <a href="oluKYishau.html"
+            ><img src="Images/oluKYishauImage.jpg" alt="A picture of Steve"
+          /></a>
+        </div>
+        <a href="oluKYishau.html">
+          <p class="author-name">Olukorede Yishau</p>
+        </a>
+      </div>
+
+      <div class="each-author">
+        <div><img src="Images/steve.jpg" alt="A picture of Steve" /></div>
+        <p class="author-name">Steve McMahon</p>
+      </div>
+    </div>
+
+    <p class="pph">
+      <a href="ourAuthors.html">Meet Our Authors</a>
+      <img src="images/right-arrow.png" alt="" />
+    </p>
+
+    <h2 class="head-tag">Some Of Our Books</h2>
+
+    <div id="books">
+      <div class="book">
+        <img src="images/for-the-love-of-country-2.jpg" alt="" />
+        <h3 class="book-title">For The Love Of The Country</h3>
+        <caption>
+          $20.00
+        </caption>
+        <p class="book-synopsis">
+          Within this book, you will find engaging works that are not only
+          educative but also creative, inspirational, as well as upbraiding.
+        </p>
+      </div>
+      <div class="book">
+        <img src="images/InTheNameOfOurFather.jpg" alt="" />
+        <h3 class="book-title">In The Name Of our father</h3>
+        <caption>
+          $20.00
+        </caption>
+        <p class="book-synopsis">
+          The desire to become a novelist suddenly seizes Justus Omoeko. He is
+          soon inspired by the story of a popular prophet in town and decides to
+          write a thriller out of the dark patch that is the life of this
+          renowned man of God...
+        </p>
+      </div>
+      <div class="book">
+        <img src="images/VaultsOfSecrets.JPG" alt="" />
+        <h3 class="book-title">vaults of secrets</h3>
+        <caption>
+          $20.00
+        </caption>
+        <p class="book-synopsis">
+          The stories in Vaults of Secrets flirt with the limits of freedom and
+          bondage.The complex, beautifully drawn characters unveil the many
+          grotesques of human life and shed light on their dark recesses
+          exposing their weaknesses.
+        </p>
+      </div>
+      <div class="book">
+        <img src="images/music-of-the-dead.jpg" alt="" />
+        <h3 class="book-title">music of the dead</h3>
+        <caption>
+          $20.00
+        </caption>
+        <p class="book-synopsis">
+          A collection of poems by Musa Idris Okpanachi. The author was
+          shortlisted for LNG in 2009.
+        </p>
+      </div>
+      <div class="book">
+        <img src="images/oceansAndShadows.jpg" alt="" />
+        <h3 class="book-title">sunbeams and shadows</h3>
+        <caption>
+          $20.00
+        </caption>
+        <p class="book-synopsis">
+          Sunbeams and Shadows is a collection of eighty-Six poems spread within
+          three sub-titles that include Continuum, Silent Pixels, and Homage.
+        </p>
+      </div>
+      <div class="book">
+        <img src="images/dance-here.jpg" alt="" />
+        <h3 class="book-title">dance here</h3>
+        <caption>
+          $20.00
+        </caption>
+        <p class="book-synopsis">
+          Such touching tribute from one who remembers Jos in all her naivety
+          and mourns her lost innocence even from many miles away from her. –
+          amu-nnadi, winner of the Glenna Luschei Prize (2014) for ‘<i
+            >through the window of a sandcastle</i
+          >’; his most recent poetry collection is ‘<i>a field of echoes</i>’
+        </p>
+      </div>
+    </div>
+
+    <p class="pph">
+      <a href="Books.html">More Books</a>
+      <img src="images/right-arrow.png" alt="" />
+    </p>
+
+    <div id="FAQs">
+      <h2 class="head-tag">FAQs</h2>
+
+      <details>
+        <summary class="FAQ1">What do I need to submit?</summary>
+        <p class="FGAs">
+          If you are submitting a manuscript, please send us three sample
+          chapters, a synopsis of the plot and a short author biography.
+        </p>
+      </details>
+      <details>
+        <summary>What does "<i>unsolicited manuscript</i>" mean?</summary>
+        <p class="FGAs">
+          An unsolicited manuscript is sent to a publisher without the publisher
+          requesting or announcing the window period for submissions is open.
+        </p>
+      </details>
+      <details>
+        <summary>
+          Who can I consult if I have general enquiries about publishing with
+          TurnShopCorp?
+        </summary>
+
+        <p class="FGAs">
+          You can send a mail to
+          <a href="mailto:TurnShopCorp@gmail.com">TurnShopCorp.</a> or call
+          +010154582178.
+        </p>
+      </details>
+      <details>
+        <summary>Do I need a literary agent?</summary>
+        <p class="FGAs">
+          You do not need to be represented by a literary agent to have your
+          work considered by TurnShopCorp.
+        </p>
+      </details>
+      <details>
+        <summary>Do you publish authors who are not living in America?</summary>
+        <p class="FGAs">
+          Yes, we have. Some of our published books are of African origin with
+          "In the name of our father" and "vaults of secrets" from Olukorede
+          Yishau.
+        </p>
+      </details>
+      <details>
+        <summary>
+          How will I know that my manuscript has been received by TurnShopCorp?
+        </summary>
+        <p class="FGAs">
+          If you send your manuscript via email, you will receive a response,
+          indicating that your email has been received.
+        </p>
+      </details>
+      <details>
+        <summary>How should I format my manuscript?</summary>
+        <div class="FGAs">
+          We prefer manuscripts that:
+
+          <ul class="FAQ-list">
+            <li>Have 1.5 or double spacing</li>
+            <li>Use Times New Roman size 12</li>
+            <li>Have page numbers</li>
+            <li>
+              Use paragraphingManuscripts sent via email should preferably be
+              submitted as an attached Microsoft Word document or PDF.
+            </li>
+          </ul>
+        </div>
+      </details>
+      <details>
+        <summary>How long should my synopsis be?</summary>
+        <p class="FGAs">
+          The synopsis needs to explain what the entire book is about. It can be
+          as short as a few paragraphs, but preferably not longer than one typed
+          page.
+        </p>
+      </details>
+      <details>
+        <summary>
+          What sort of information should I include in my introductory letter?
+        </summary>
+        <p class="FGAs">
+          You should include any relevant information about the submitted
+          material, such as a brief author biography, why you wrote the book,
+          etc.
+        </p>
+      </details>
+      <details>
+        <summary>How long should my manuscript be?</summary>
+        <p class="FGAs">
+          The length of a manuscript depends on the book, but as a rough
+          guideline, full-length adult fiction/non-fiction works should be
+          between 35,000 and 100,000 words.
+        </p>
+      </details>
+    </div>
+    <h2 class="head-tag">Best Seller For The Week</h2>
+    <div id="best-seller">
+      <div id="book-cart-details">
+        <div class="book-cover">
+          <a href="VaultsOfSecrets.html">
+            <img src="images/VaultsOfSecrets.JPG" alt="" />
+          </a>
+        </div>
+
+        <div class="cart-details">
+          <h3 class="head-tag">Vaults Of Secrets</h3>
+          <p class="book-synopsis">
+            <span class="voc-synopsis">Written By: OluKorede Yishau</span>
+            <br />
+            <caption>
+              $20.00
+            </caption>
+            <br />
+            <span class="voc-synopsis">Synopsis:</span>
+
+            The stories in Vaults of Secrets flirt with the limits of freedom
+            and bondage. They are means through which award-winning journalist
+            Olukorede S. Yishau examines the nature of man and his ability to
+            make choices and live with the repercussions. The complex,
+            beautifully drawn characters unveil the many grotesques of human
+            life and shed light on their dark recesses exposing their
+            weaknesses. Heartrending, luminous, and indelible, this is an
+            astoundingly audacious collection of short stories. <br />
+            <br />
+            <br />
+            “There is a story here for everyone...secrets, regrets, betrayals
+            and many ingredients of human existence...pieced together in simple
+            prose.” <br />
+
+            <b> — Nze Sylva Ifedigbo, Author, My Mind Is No Longer Here.</b>
+
+            <br />
+            <br />
+            “Olukorede Yishau 's Vaults of Secrets is a pleasure to read. Its
+            characters invite you to live through their secrets with them...
+            Brilliant stories.” <br />
+            <b> — Ever Obi, Author Of Men Don't Die</b>
+          </p>
+
+          <button class="purchase-link">
+            <a href="VaultsOfSecrets.html">Purchase This Book</a>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div id="main-footer">
+        <div id="hyperlinks-footer-part">
+          <h3 class="head-tag">Pages</h3>
+          <ul>
+            <li><a href="TermsAndConditions.html">Terms and Conditions</a></li>
+            <li><a href="Books.html">Books</a></li>
+            <li><a href="OurRetailOutlets.html">Our Retail Outlets</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="connectwithUs.html">Create An Account</a></li>
+            <li><a href="#Top">Back to top</a></li>
+          </ul>
+        </div>
+        <div id="TSC-details-part">
+          <h3 class="head-tag">Connect With Us</h3>
+          <p class="contact-info">
+            <span class="header"><img src="images/home.png" alt="" /></span
+            ><span class="text"> New York, NY 10012, US</span>
+          </p>
+
+          <p class="contact-info">
+            <span class="header"><img src="images/email.png" alt="" /></span
+            ><span class="text"
+              ><a href="mailto:TurnShopCorp@gmail.com"
+                >TurnShopCorp@gmail.com</a
+              ></span
+            >
+          </p>
+          <p class="contact-info">
+            <span class="header"
+              ><img src="images/phone-call.png" alt=""
+            /></span>
+            <span class="text"> +0102873196</span>
+          </p>
+        </div>
+
+        <div id="about-tsc">
+          <h3 class="head-tag">TurnShop Corp.</h3>
+          <p class="text">
+            TurnShop Corp is a leading pushlishing outlet in America. <br />
+            Having been publishing for students, IT Professional<br />
+            and researchers since 1985, we have been able to amass<br />
+            a great list of clientelle. We are the current publishers for
+            Astronomical<br />
+            researcher Dwayne "The Rock" Johnson. We also have the highly<br />
+            respected tech guru, Mosh Hamedani, on their list. Other clients
+            include<br />
+            Pulitzer winners Clark Kent and Lois Lane amongst others.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <div id="copyright-footer">
+      <p class="copyright-details">
+        &copy;TurnShop Corp. 2022, All Right Reserved.
+      </p>
+
+      <p class="scm">
+        <a href="Facebook.com"><img src="images/facebook.png" alt="" /></a>
+        <a href="Twitter.com"> <img src="Images/twitter.png" alt="" /></a>
+        <a href="Instagram.com"><img src="Images/linkedin.png" alt="" /></a>
+      </p>
+    </div>
+  </body>
+</html>

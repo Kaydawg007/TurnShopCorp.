@@ -1,0 +1,774 @@
+/* Home Page Styles */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif sans-serif;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  padding: 20px 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: linear-gradient(-20deg, darkslateblue, blue, darkslateblue);
+}
+
+header #logo-side a {
+  font-size: 24px;
+  color: white;
+  font-size: 400;
+  text-decoration: none;
+}
+
+header #js-nav-bar {
+  display: none;
+}
+
+header #js-nav-bar .show-modal {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+header #menu-bar p {
+  display: inline-block;
+  padding: 4px 10px;
+}
+
+header #menu-bar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  -webkit-transition: color 0.2s ease-in;
+  transition: color 0.2s ease-in;
+}
+
+header #menu-bar a:hover {
+  color: moccasin;
+}
+
+#menu-list {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  bottom: 0;
+  opacity: 0.9;
+  background-image: linear-gradient(45deg, darkslateblue, blue, darkslateblue);
+  z-index: 5;
+  padding-top: 150px;
+}
+
+#menu-list p.menu-items {
+  width: 230px;
+  margin: auto;
+  text-align: center;
+  padding: 15px;
+}
+
+#menu-list p.menu-items a {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+button.menu-list-exit {
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  background-color: black;
+  border: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.head-tag {
+  color: slateblue;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 30px;
+}
+
+.head-tag:nth-of-type(3) {
+  margin-top: 30px;
+}
+
+#our-authors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+#our-authors .each-author div {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 100px;
+}
+
+#our-authors .each-author img {
+  border-radius: 100px;
+  width: 200px;
+  height: 200px;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+#our-authors .each-author img:hover {
+  opacity: 0.95;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: pointer;
+}
+
+#our-authors .each-author a {
+  color: black;
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+#our-authors .each-author a:hover {
+  color: slateblue;
+}
+
+#our-authors .each-author p {
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+#our-authors .each-author p:hover {
+  color: slateblue;
+  cursor: pointer;
+}
+
+p.pph {
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px;
+  margin: auto;
+}
+
+p.pph a {
+  color: black;
+}
+
+p.pph img {
+  width: 30px;
+  height: 18px;
+  padding: 5px;
+}
+
+p.pph:nth-of-type(2) {
+  margin-bottom: 30px;
+}
+
+#books {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-family: "roboto", sans-serif;
+}
+
+#books .book {
+  padding: 20px;
+  width: 25%;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+#books .book .book-title {
+  font-size: 18px;
+  color: #333;
+  padding: 5px;
+}
+
+#books .book .book-synopsis {
+  font-size: 14px;
+  color: #777;
+  padding: 5px;
+  letter-spacing: 0.5;
+  line-height: 1.3;
+}
+
+#books .book img {
+  width: 100%;
+  height: 300px;
+}
+
+#FAQs {
+  width: 90%;
+  margin: auto;
+  background-color: #f7f7f7;
+  border-top: 5px solid slateblue;
+  border-bottom: 5px solid slateblue;
+}
+
+#FAQs details {
+  padding: 10px;
+}
+
+#FAQs details summary {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  padding: 10px;
+  text-transform: capitalize;
+}
+
+#FAQs details summary:hover {
+  cursor: pointer;
+}
+
+#FAQs details .FGAs {
+  padding: 5px;
+  color: #555;
+  font-style: oblique;
+  width: 80%;
+  margin: auto;
+  font-size: 16px;
+}
+
+#best-seller #book-cart-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "roboto", sans-serif;
+}
+
+#best-seller #book-cart-details .book-cover img {
+  width: 100%;
+}
+
+#best-seller .cart-details {
+  width: 47%;
+}
+
+#best-seller .cart-details .book-synopsis {
+  font-size: 24px;
+  width: 100%;
+  margin: auto;
+  color: #333;
+  letter-spacing: 0.4;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+#best-seller .cart-details .book-synopsis .voc-synopsis {
+  padding: 3px;
+  font-weight: 600;
+  padding: 2px;
+  color: #000;
+}
+
+#best-seller .cart-details button {
+  padding: 7px;
+  background-color: slateblue;
+  width: 200px;
+  margin: 15px auto;
+  border: 2px solid slateblue;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#best-seller .cart-details button a {
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+}
+
+#best-seller .cart-details button:hover {
+  background-color: slateblue;
+  opacity: 0.9;
+}
+
+footer {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(darkslateblue), color-stop(blue), to(darkslateblue));
+  background-image: linear-gradient(360deg, darkslateblue, blue, darkslateblue);
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+footer #main-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer #main-footer #TSC-details-part h3 {
+  color: black;
+  padding: 10px;
+}
+
+footer #main-footer #TSC-details-part .contact-info {
+  color: white;
+  padding: 5px;
+  font-size: 16px;
+  text-transform: capitalize;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer #main-footer #TSC-details-part .contact-info .text {
+  margin-top: 10px;
+  padding-left: 10px;
+}
+
+footer #main-footer #TSC-details-part .contact-info img {
+  width: 30px;
+  height: 30px;
+  padding-top: 10px;
+}
+
+footer #main-footer #TSC-details-part .contact-info a {
+  color: white;
+  text-decoration: none;
+}
+
+footer #main-footer #TSC-details-part .contact-info a:hover {
+  text-decoration: underline;
+}
+
+footer #main-footer #hyperlinks-footer-part h3 {
+  color: black;
+  padding: 10px;
+}
+
+footer #main-footer #hyperlinks-footer-part li {
+  list-style-type: none;
+  padding: 6px;
+}
+
+footer #main-footer #hyperlinks-footer-part li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+footer #main-footer #hyperlinks-footer-part li a:hover {
+  text-decoration: underline;
+  color: #f7f7f7;
+}
+
+footer #about-tsc h3 {
+  color: black;
+  padding: 10px;
+}
+
+footer #about-tsc .text {
+  text-align: left;
+  padding: 10px;
+  line-height: 1.4;
+}
+
+#copyright-footer {
+  background-color: darkslateblue;
+  padding: 20px 40px;
+  color: white;
+  border-top: 2px solid slateblue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#copyright-footer .scm {
+  float: right;
+}
+
+#copyright-footer .scm img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+/* About Us Page Styles */
+p.aboutUs-details {
+  letter-spacing: 1.1;
+  line-height: 1.7;
+  font-size: 20px;
+  color: #333;
+  font-weight: 300;
+  padding: 0 40px 20px 40px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+p.aboutUs-details span.aup-author-names {
+  font-size: 24px;
+  color: #000;
+  font-weight: 540;
+}
+
+p.aboutUs-details span.aup-title {
+  font-size: 23px;
+  color: #000;
+  font-weight: 540;
+  text-transform: uppercase;
+}
+
+/* Our Retail Outlets */
+table {
+  border-collapse: collapse;
+  width: 300px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+table tr th {
+  padding: 20px;
+  font-size: 24px;
+}
+
+table tr td {
+  padding: 20px;
+  font-size: 20px;
+}
+
+/* TACP STYLES */
+#TACP .submission-g-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#TACP .submission-g-details .book-genre {
+  padding: 0 20px;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  width: 40%;
+}
+
+#TACP .submission-g-details .book-genre .head-tag {
+  padding-bottom: 10;
+}
+
+#TACP .submission-g-details .book-genre .tac-list li {
+  font-size: 20px;
+  letter-spacing: 0.5;
+  line-height: 1.5;
+  text-transform: capitalize;
+}
+
+#TACP .submission-g-details .genre-details {
+  width: 50%;
+}
+
+#TACP .submission-g-details .genre-details .head-tag {
+  padding-bottom: 10;
+}
+
+#TACP .submission-g-details .genre-details .details .tac-list li {
+  font-size: 20px;
+  letter-spacing: 0.5;
+  line-height: 1.5;
+  text-transform: capitalize;
+}
+
+/* Connect with us page styles */
+#cwu marquee {
+  padding: 10px;
+  background-image: linear-gradient(45deg, #555, #000, #555);
+  color: white;
+  margin-top: 20px;
+  font-size: 20px;
+  text-transform: capitalize;
+  letter-spacing: 0.9;
+}
+
+#cwu form {
+  width: 390px;
+  margin: auto;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+}
+
+#cwu form input.txt {
+  width: 300px;
+  padding: 10px;
+  margin: 5px;
+  outline: none;
+  border: 0;
+  border-bottom: 1px solid #333;
+  border: 2px solid transparent;
+}
+
+#cwu form input.txt:focus {
+  border: 2px solid slateblue;
+  background-color: #f7f7f7;
+}
+
+#cwu form select {
+  padding: 5px;
+  background-color: slateblue;
+  color: white;
+  margin: 10px 0;
+  font-size: 16px;
+  text-transform: capitalize;
+  font-family: "Times New Roman", Times, serif;
+}
+
+#cwu form select option {
+  outline: none;
+  border: 0;
+}
+
+#cwu form p.taca {
+  font-size: 18px;
+  margin: 5px 0;
+  text-transform: capitalize;
+}
+
+#cwu form p.taca a {
+  color: darkslateblue;
+  text-decoration: none;
+}
+
+#cwu form p.taca a:hover {
+  text-decoration: underline;
+}
+
+#cwu form #submit {
+  padding: 7px;
+  background-color: white;
+  border: 1px solid slateblue;
+  color: darkslateblue;
+  font-size: 16px;
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 10px;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+#cwu form #submit:hover {
+  background-color: darkslateblue;
+  color: white;
+  cursor: pointer;
+}
+
+#cwu .head-tag {
+  font-size: 18px;
+  color: black;
+}
+
+#cwu .head-tag a {
+  color: slateblue;
+}
+
+#cwu .head-tag a:hover {
+  color: darkslateblue;
+}
+
+#bio .bio-image {
+  width: 80%;
+  margin: auto;
+}
+
+#bio .bio-image img {
+  width: 100%;
+}
+
+/* Responsive Styles for all Pages */
+@media screen and (max-width: 600px) {
+  header #menu-bar {
+    display: none;
+  }
+  header #js-nav-bar {
+    display: inline-block;
+  }
+  #our-authors {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: auto;
+    width: 160px;
+  }
+  #our-authors .each-author img {
+    border-radius: 100px;
+    width: 200px;
+    height: 200px;
+  }
+  #our-authors .each-author p {
+    text-align: center;
+    padding: 10px;
+  }
+  #FAQs {
+    width: 100%;
+  }
+  #books .book {
+    padding: 20px;
+    width: 80%;
+    text-align: center;
+    text-transform: capitalize;
+  }
+  #books .book img {
+    width: 100%;
+    height: 300px;
+  }
+  #best-seller #book-cart-details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #best-seller .cart-details {
+    width: 80%;
+  }
+  #best-seller .cart-details .head-tag {
+    width: 250px;
+    margin: auto;
+  }
+  /* TACP Styles */
+  #TACP .submission-g-details {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #TACP .submission-g-details .book-genre,
+  #TACP .submission-g-details .genre-details {
+    width: 90%;
+    margin: auto;
+  }
+  /* Form Styles */
+  form {
+    width: 80%;
+  }
+  form input.txt {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #best-seller .cart-details {
+    width: 80%;
+  }
+  #best-seller .cart-details .head-tag {
+    width: 250px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  * {
+    max-width: 250px;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  #books .book {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 1028px) {
+  #books .book {
+    width: 27%;
+  }
+}
+/*# sourceMappingURL=Style.css.map */

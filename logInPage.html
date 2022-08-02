@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log In</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="jquery-3.2.1.min.js"></script>
+    <script>
+      $(function () {
+        $(".show-modal").click(function () {
+          $("#menu-list").slideDown();
+        });
+
+        $(".menu-list-exit").click(function () {
+          $("#menu-list").slideUp();
+        });
+      });
+    </script>
+  </head>
+  <body id="cwu">
+    <header id="Top">
+      <div id="logo-side"><a href="Index.html">📘TurnShopCorp.</a></div>
+      <div id="menu-bar">
+        <p class="menu-item"><a href="Index.html">Home</a></p>
+        <p class="menu-item"><a href="AboutUs.html">About Us</a></p>
+        <p class="menu-item">
+          <a href="OurRetailOutlets.html">Our Retail Outlets</a>
+        </p>
+        <p class="menu-item"><a href="Books.html">Books</a></p>
+        <p class="menu-item">
+          <a href="connectwithUs.html">Create An Account</a>
+        </p>
+      </div>
+      <div id="js-nav-bar">
+        <img class="show-modal" src="images/menu-outline.svg" alt="menu" />
+      </div>
+    </header>
+
+    <div id="menu-list">
+      <p class="menu-items"><a href="Index.html">Home</a></p>
+      <p class="menu-items"><a href="AboutUs.html">About Us</a></p>
+      <p class="menu-items">
+        <a href="OurRetailOutlets.html">Our Retail Outlets</a>
+      </p>
+      <p class="menu-items"><a href="Books.html">Books</a></p>
+      <p class="menu-items">
+        <a href="connectwithUs.html">Create An Account</a>
+      </p>
+      <br /><br /><br /><br />
+      <button class="menu-list-exit">Exit</button>
+    </div>
+
+    <form>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="txt"
+        required
+        placeholder="Email"
+      /><br />
+      <input
+        type="password"
+        name="password"
+        id="password"
+        minlength="8"
+        maxlength="12"
+        placeholder="Password"
+        class="txt"
+        required
+      />
+      <p class="taca">
+        <input type="checkbox" name="eMl" id="eMl" checked /> Keep me signed in
+      </p>
+
+      <input type="submit" value="Log In" id="submit" />
+    </form>
+
+    <p class="head-tag">
+      Don't have an account? <a href="connectwithUs.html">Create one!</a>
+    </p>
+
+    <footer>
+      <div id="main-footer">
+        <div id="hyperlinks-footer-part">
+          <h3 class="head-tag">Pages</h3>
+          <ul>
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="Books.html">Books</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="OurRetailOutlets.html">Our Retail Outlets</a></li>
+            <li><a href="TermsAndConditions.html">Terms and Conditions</a></li>
+            <li><a href="#Top">Back to top</a></li>
+          </ul>
+        </div>
+        <div id="TSC-details-part">
+          <h3 class="head-tag">Connect With Us</h3>
+          <p class="contact-info">
+            <span class="header"><img src="images/home.png" alt="" /></span
+            ><span class="text"> New York, NY 10012, US</span>
+          </p>
+
+          <p class="contact-info">
+            <span class="header"><img src="images/email.png" alt="" /></span
+            ><span class="text"
+              ><a href="mailto:TurnShopCorp@gmail.com"
+                >TurnShopCorp@gmail.com</a
+              ></span
+            >
+          </p>
+          <p class="contact-info">
+            <span class="header"
+              ><img src="images/phone-call.png" alt=""
+            /></span>
+            <span class="text"> +0102873196</span>
+          </p>
+        </div>
+
+        <div id="about-tsc">
+          <h3 class="head-tag">TurnShop Corp.</h3>
+          <p class="text">
+            TurnShop Corp is a leading pushlishing outlet in America. <br />
+            Having been publishing for students, IT Professional<br />
+            and researchers since 1985, we have been able to amass<br />
+            a great list of clientelle. We are the current publishers for
+            Astronomical<br />
+            researcher Dwayne "The Rock" Johnson. We also have the highly<br />
+            respected tech guru, Mosh Hamedani, on their list. Other clients
+            include<br />
+            Pulitzer winners Clark Kent and Lois Lane amongst others.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <div id="copyright-footer">
+      <p class="copyright-details">
+        &copy;TurnShop Corp. 2022, All Right Reserved.
+      </p>
+
+      <p class="scm">
+        <a href="Facebook.com"><img src="images/facebook.png" alt="" /></a>
+        <a href="Twitter.com"> <img src="Images/twitter.png" alt="" /></a>
+        <a href="Instagram.com"><img src="Images/linkedin.png" alt="" /></a>
+      </p>
+    </div>
+  </body>
+</html>
